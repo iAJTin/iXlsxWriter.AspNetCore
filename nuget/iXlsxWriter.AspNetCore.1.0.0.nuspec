@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+	<metadata>
+		<id>iXlsxWriter.AspNetCore</id>
+		<version>1.0.1</version>
+		<title>iXlsxWriter.AspNetCore</title>
+		<authors>iAJTin</authors>
+		<owners>iAJTin</owners>
+    <readme>.\README.md</readme>
+		<license type="expression">AGPL-3.0-only</license>
+		<projectUrl>https://github.com/iAJTin/iXlsxWriter.AspNetCore</projectUrl>
+		<icon>.\iXlsxWriter.AspNetCore.png</icon>
+		<iconUrl>https://raw.githubusercontent.com/iAJTin/iXlsxWriter.AspNet/master/nuget/iXlsxWriter.AspNetCore.png</iconUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description> 
+      iXlsxWriter.AspNetCore, extends iXlsxWriter to work in AspNetCore projects, contains extension methods to download XlsxInput instances as well as OutputResult, facilitating its use in this environment
+    </description>
+		<copyright>Copyright © 2023 iAJTin</copyright>
+		<tags>iXlsxWriter Excel Writer iTin</tags>
+		<repository type="git" url="https://github.com/iAJTin/iXlsxWriter.AspNetCore"/>
+    <dependencies>
+      <group targetFramework="net461">
+        <dependency id="iXlsxWriter.Abstractions" version="1.0.1" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="iXlsxWriter.Abstractions" version="1.0.1" />
+      </group>
+      <group targetFramework=".NETStandard2.1">
+        <dependency id="iXlsxWriter.Abstractions" version="1.0.1" />
+      </group>
+      <group targetFramework=".NETCoreApp3.1">
+        <dependency id="iXlsxWriter.Abstractions" version="1.0.1" />
+      </group>
+      <group targetFramework="net60">
+        <dependency id="iXlsxWriter.Abstractions" version="1.0.1" />
+      </group>
+    </dependencies>
+  </metadata>
+	<files>
+    <file src=".\README.md" target="." />
+    <file src="..\README.txt" target="." />
+    <file src=".\iXlsxWriter.AspNetCore.png" target="." />
+		<file src="..\src\lib\bin\Debug\**" target="lib" exclude="**\*.deps.json;**\*.pdb;" /> 
+	</files>
+</package>
